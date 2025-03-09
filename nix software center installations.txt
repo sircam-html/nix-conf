@@ -1,15 +1,4 @@
 
-Name:               brave
-Flake attribute:    legacyPackages.x86_64-linux.brave
-Original flake URL: flake:nixpkgs
-Locked flake URL:   github:NixOS/nixpkgs/ed0b1881565c1ffef490c10d663d4f542031dad3?narHash=sha256-y2hByvBM03s9T2fpeLjW6iprbxnhV9mJMmSwCHc41ZQ%3D
-Store paths:        /nix/store/s1yjms3bzc0k8v1pspx6iyircxa04q5n-brave-1.75.181
-
-Name:               chromium
-Flake attribute:    legacyPackages.x86_64-linux.chromium
-Original flake URL: flake:nixpkgs
-Locked flake URL:   github:NixOS/nixpkgs/de0fe301211c267807afd11b12613f5511ff7433?narHash=sha256-aizILFrPgq/W53Jw8i0a1h1GZAAKtlYOrG/A5r46gVM%3D
-Store paths:        /nix/store/dvx40b1y5xp8398c1b26c8nz7r00622b-chromium-134.0.6998.35
 
 Name:               devbox
 Flake attribute:    legacyPackages.x86_64-linux.devbox
