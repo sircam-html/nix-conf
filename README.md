@@ -16,5 +16,3 @@ Other activated options:
 Personally i do not recommend to copy and paste an entire configuration.  Study, analyze, pick what you need it and paste to your configuration.
 
 In the case you ignore this warning, by default this particular system will always boot and login to desktop without password prompts.
-
-Repo mirror: [Opencode](https://www.opencode.net/sircam/personal-nix-configuration)
