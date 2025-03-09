@@ -1,0 +1,48 @@
+
+Name:               brave
+Flake attribute:    legacyPackages.x86_64-linux.brave
+Original flake URL: flake:nixpkgs
+Locked flake URL:   github:NixOS/nixpkgs/ed0b1881565c1ffef490c10d663d4f542031dad3?narHash=sha256-y2hByvBM03s9T2fpeLjW6iprbxnhV9mJMmSwCHc41ZQ%3D
+Store paths:        /nix/store/s1yjms3bzc0k8v1pspx6iyircxa04q5n-brave-1.75.181
+
+Name:               chromium
+Flake attribute:    legacyPackages.x86_64-linux.chromium
+Original flake URL: flake:nixpkgs
+Locked flake URL:   github:NixOS/nixpkgs/de0fe301211c267807afd11b12613f5511ff7433?narHash=sha256-aizILFrPgq/W53Jw8i0a1h1GZAAKtlYOrG/A5r46gVM%3D
+Store paths:        /nix/store/dvx40b1y5xp8398c1b26c8nz7r00622b-chromium-134.0.6998.35
+
+Name:               devbox
+Flake attribute:    legacyPackages.x86_64-linux.devbox
+Original flake URL: flake:nixpkgs
+Locked flake URL:   github:NixOS/nixpkgs/de0fe301211c267807afd11b12613f5511ff7433?narHash=sha256-aizILFrPgq/W53Jw8i0a1h1GZAAKtlYOrG/A5r46gVM%3D
+Store paths:        /nix/store/g0qiisk7sa2f5v17jf83fms8qcjas4ss-devbox-0.14.0
+
+Name:               ferdium
+Flake attribute:    legacyPackages.x86_64-linux.ferdium
+Original flake URL: flake:nixpkgs
+Locked flake URL:   github:NixOS/nixpkgs/02032da4af073d0f6110540c8677f16d4be0117f?narHash=sha256-SvtvVKHaUX4Owb%2BPasySwZsoc5VUeTf1px34BByiOxw%3D
+Store paths:        /nix/store/3mwx5v9kwa5jzvnszanv3b3zbaaayvwl-ferdium-7.0.0
+
+Name:               heroic
+Flake attribute:    legacyPackages.x86_64-linux.heroic
+Original flake URL: flake:nixpkgs
+Locked flake URL:   github:NixOS/nixpkgs/de0fe301211c267807afd11b12613f5511ff7433?narHash=sha256-aizILFrPgq/W53Jw8i0a1h1GZAAKtlYOrG/A5r46gVM%3D
+Store paths:        /nix/store/z174q0r4m5dg5yxfnb8x1z3421kmhmij-heroic-2.16.0
+
+Name:               libvirt
+Flake attribute:    legacyPackages.x86_64-linux.libvirt
+Original flake URL: flake:nixpkgs
+Locked flake URL:   github:NixOS/nixpkgs/02032da4af073d0f6110540c8677f16d4be0117f?narHash=sha256-SvtvVKHaUX4Owb%2BPasySwZsoc5VUeTf1px34BByiOxw%3D
+Store paths:        /nix/store/axli3xq9zfhw66f6mw8d0lj74hkz3xya-libvirt-11.0.0
+
+Name:               obs-studio
+Flake attribute:    legacyPackages.x86_64-linux.obs-studio
+Original flake URL: flake:nixpkgs
+Locked flake URL:   github:NixOS/nixpkgs/de0fe301211c267807afd11b12613f5511ff7433?narHash=sha256-aizILFrPgq/W53Jw8i0a1h1GZAAKtlYOrG/A5r46gVM%3D
+Store paths:        /nix/store/saqip65xws2j09kgwiz2hy0z80jj8r6p-obs-studio-31.0.1
+
+Name:               youtube-music
+Flake attribute:    legacyPackages.x86_64-linux.youtube-music
+Original flake URL: flake:nixpkgs
+Locked flake URL:   github:NixOS/nixpkgs/de0fe301211c267807afd11b12613f5511ff7433?narHash=sha256-aizILFrPgq/W53Jw8i0a1h1GZAAKtlYOrG/A5r46gVM%3D
+Store paths:        /nix/store/a5drk4aq4caw6b31w2lwhw4hgsw60r31-youtube-music-3.7.4
