@@ -1,5 +1,3 @@
-
-
 Name:               devbox
 Flake attribute:    legacyPackages.x86_64-linux.devbox
 Original flake URL: flake:nixpkgs

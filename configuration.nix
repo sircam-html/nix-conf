@@ -129,7 +129,9 @@
       nix-software-center
       virt-manager
       filelight
+      chromium
       scrcpy
+      brave
       kcalc
 
   ];
