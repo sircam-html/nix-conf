@@ -4,16 +4,6 @@
 
 { config, pkgs, lib, ... }:
 
- # Nix Software Center
- let
-  nix-software-center = import (pkgs.fetchFromGitHub {
-    owner = "snowfallorg";
-    repo = "nix-software-center";
-    rev = "0.1.2";
-    sha256 = "xiqF1mP8wFubdsAQ1BmfjzCgOD3YZf7EGWl9i69FTls=";
-  }) {};
- in
-
   # Nix Configuration start here
 {
   imports =
@@ -123,15 +113,19 @@
 
       vlc
       htop
+      devbox
+      ferdium
+      chromium
       neofetch
       audacious
       kolourpaint
-      nix-software-center
+      youtube-music
       virt-manager
+      obs-studio
       filelight
-      chromium
+      libvirt
+      heroic
       scrcpy
-      brave
       kcalc
 
   ];
