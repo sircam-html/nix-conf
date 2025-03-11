@@ -1,5 +1,8 @@
 # About this flake
 
-This particular Flakes allows you to fletch the lastest packages of Youtube Music from Github's Master source. Remember to excute the file using your terminal to run the program.
+Warming:  this a personal experiment while on my path learning Flakes.  Do not recommend to use.
 
-To obtain the last version of Youtube Music just change versions numbers and get the Sha256 hash in 32bit that correspond to that particular version.
+
+This particular Flakes allows you to fetch the lastest packages of Youtube Music from Github's Master source. 
+
+To obtain the lastest version of Youtube Music we just need to change versions numbers and get the Sha256 hash in 32bit that correspond to that particular version.
