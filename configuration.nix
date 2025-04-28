@@ -106,26 +106,18 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs;
 
-   # On KDE intall ventoy and fix the no GUI issue.
- (ventoy.override {defaultGuiType = "qt5"; withQt5 = true; })
+  [
 
-      vlc
       htop
       devbox
-      ferdium
       chromium
       neofetch
-      audacious
       kolourpaint
-      youtube-music
-      virt-manager
       obs-studio
       filelight
       libvirt
-      heroic
-      scrcpy
       kcalc
 
   ];
