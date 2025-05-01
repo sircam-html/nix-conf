@@ -109,17 +109,14 @@
   environment.systemPackages = with pkgs;
 
   [
-
       htop
-      devbox
+      devenv
       chromium
       neofetch
       kolourpaint
-      obs-studio
       filelight
       libvirt
       kcalc
-
   ];
 
   # Automatic updates
