@@ -13,6 +13,7 @@
   pkgs.git
   pkgs.heroic
   pkgs.ferdium
+  pkgs.obs-studio
   pkgs.virt-manager
   pkgs.youtube-music
 
