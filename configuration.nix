@@ -111,7 +111,6 @@
   [
       htop
       devenv
-      chromium
       neofetch
       kolourpaint
       filelight
