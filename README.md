@@ -6,11 +6,11 @@ By default it includes several and important configurations like virtualization 
 
 Others activated options are:
 
-- [ ] steam activated
-- [ ] flatpak activated
+- [ ] Steam activated
+- [ ] Flatpak activated
 - [ ] Plymouth activated
-- [ ] nix flakes activated
-- [ ] non-free packages activated
+- [ ] Nix flakes activated
+- [ ] Non-free packages activated
 
 Personally i do not recommend to copy and paste an entire configuration.  Study, analyze, pick what you need it and paste to your configuration.
 
