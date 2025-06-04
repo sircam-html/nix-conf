@@ -6,9 +6,9 @@ By default it includes several and important configurations like virtualization 
 
 Others activated options are:
 
-- [ ] Plymouth activated
 - [ ] steam activated
 - [ ] flatpak activated
+- [ ] Plymouth activated
 - [ ] nix flakes activated
 - [ ] non-free packages activated
 
