@@ -13,6 +13,7 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.plymouth.enable = true;
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -96,6 +97,9 @@
   # Install firefox.
   programs.firefox.enable = true;
 
+  # Install Steam
+  programs.steam.enable = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -112,13 +116,7 @@
       kdePackages.yakuake
       kdePackages.filelight
       kdePackages.kolourpaint
-      coolercontrol.coolercontrol-gui
   ];
-
-   # Automatic updates & system rebuild
-  system.autoUpgrade = {enable = true;
-  dates = "weekly";
-  operation = "switch";};
 
   # Automatic cleanup
   nix.gc.automatic = true;
@@ -148,7 +146,7 @@
     }
   ];
 
-  # Enable Nvidia propietary drivers
+  # Enable Nvidia proprietary drivers
   hardware.graphics.enable = true;
   services.xserver.videoDrivers = [ "nvidia" ];
   hardware.nvidia = {
