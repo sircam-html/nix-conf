@@ -148,7 +148,6 @@
     }
   ];
 
-
   # Enable Nvidia propietary drivers
   hardware.graphics.enable = true;
   services.xserver.videoDrivers = [ "nvidia" ];
@@ -164,6 +163,9 @@
  # Enable CoolerControl
  programs.coolercontrol.enable = true;
  programs.coolercontrol.nvidiaSupport = true;
+
+ # Enable AMD CPU Microcode updates
+ hardware.cpu.amd.updateMicrocode = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
