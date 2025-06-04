@@ -1,6 +1,6 @@
 # Personal Nix Configuration
 
-For exclusive use of reproducibility, this is a highly/stable and personal configuration of my NixOS system on KDE Plasma 6 desktop environment it is completely adapted for communication, Virtual Machine Management, isolated development (devenv) and Cloud-Gaming with Geforce Now  employing a clean app made with Chromium as main client. 
+For exclusive use of reproducibility, this is a highly/stable and personal configuration of my NixOS system on KDE Plasma 6 desktop environment it is completely adapted for communication, Virtual Machine Management, isolated development (devenv) and Cloud-Gaming with Geforce Now employing a clean web-app made with Chromium.. 
 
 By default it includes several and important configurations like virtualization for the use of Virt-Manager,autoclean,autoupdate and the annoying password prompt completely disable in terminal.
 
