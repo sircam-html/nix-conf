@@ -2,9 +2,8 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, lib, ... }:
+{ config, pkgs, ... }:
 
-  # Nix Configuration start here
 {
   imports =
     [ # Include the results of the hardware scan.
@@ -14,7 +13,6 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.plymouth.enable = true;
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -62,7 +60,7 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -92,14 +90,11 @@
   };
 
   # Enable automatic login for the user.
-  services.xserver.displayManager.autoLogin.enable = true;
-  services.xserver.displayManager.autoLogin.user = "sircam";
+  services.displayManager.autoLogin.enable = true;
+  services.displayManager.autoLogin.user = "sircam";
 
   # Install firefox.
   programs.firefox.enable = true;
-
-  # Install Steam.
-  programs.steam.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -111,16 +106,18 @@
   [
       htop
       devenv
-      neofetch
-      kolourpaint
-      filelight
       libvirt
-      kcalc
+      neofetch
+      kdePackages.kcalc
+      kdePackages.yakuake
+      kdePackages.filelight
+      kdePackages.kolourpaint
   ];
 
-  # Automatic updates
-  system.autoUpgrade.enable = true;
-  system.autoUpgrade.dates = "weekly";
+   # Automatic updates & system rebuild
+  system.autoUpgrade = {enable = true;
+  dates = "weekly";
+  operation = "switch";};
 
   # Automatic cleanup
   nix.gc.automatic = true;
@@ -134,7 +131,7 @@
   # Enable virtualisation
   virtualisation.libvirtd.enable = true;
 
-  # List services that you want to enable:
+    # List services that you want to enable:
   services.flatpak.enable = true;
 
    # Disable password prompt in terminal
@@ -167,7 +164,7 @@
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
-  networking.firewall.enable = true;
+  # networking.firewall.enable = false;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
@@ -175,7 +172,6 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "24.11"; # Did you read the comment?
+  system.stateVersion = "25.05"; # Did you read the comment?
 
 }
-
