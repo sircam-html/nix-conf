@@ -112,6 +112,7 @@
       kdePackages.yakuake
       kdePackages.filelight
       kdePackages.kolourpaint
+      coolercontrol.coolercontrol-gui
   ];
 
    # Automatic updates & system rebuild
@@ -146,6 +147,23 @@
       ];
     }
   ];
+
+
+  # Enable Nvidia propietary drivers
+  hardware.graphics.enable = true;
+  services.xserver.videoDrivers = [ "nvidia" ];
+  hardware.nvidia = {
+  modesetting.enable = true;
+  nvidiaSettings = true;
+  open = false;  # Use proprietary driver, recommended on 25.05
+  package = config.boot.kernelPackages.nvidiaPackages.stable;
+};
+
+ nixpkgs.config.nvidia.acceptLicense = true;
+
+ # Enable CoolerControl
+ programs.coolercontrol.enable = true;
+ programs.coolercontrol.nvidiaSupport = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
