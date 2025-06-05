@@ -154,7 +154,7 @@
   nvidiaSettings = true;
   open = false;  # Use proprietary driver, recommended on 25.05
   package = config.boot.kernelPackages.nvidiaPackages.stable;
-};
+ };
 
  nixpkgs.config.nvidia.acceptLicense = true;
 
@@ -162,8 +162,21 @@
  programs.coolercontrol.enable = true;
  programs.coolercontrol.nvidiaSupport = true;
 
- # Enable AMD CPU Microcode updates
+ # Enable AMD CPU Balance performance
  hardware.cpu.amd.updateMicrocode = true;
+
+ services.thermald.enable = true;
+
+ services.tlp.enable = true;
+ services.tlp.settings = {
+ CPU_SCALING_GOVERNOR_ON_AC = "performance";
+ CPU_BOOST_ON_AC = 1;
+ CPU_ENERGY_PERF_POLICY_ON_AC = "balance_performance";
+ };
+
+ services.power-profiles-daemon.enable = false;  # Disable to avoid conflict with TLP
+
+
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
