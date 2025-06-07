@@ -2,7 +2,7 @@
 
 For exclusive use of reproducibility, this is a highly/stable and personal configuration of my NixOS system on KDE Plasma 6 desktop environment it is completely adapted for communication, Virtual Machine Management, isolated development (devenv) and Cloud-Gaming with Geforce Now employing a clean web-app made with Chromium.. 
 
-By default it includes several and important configurations like virtualization for the use of Virt-Manager,autoclean,autoupdate and the annoying password prompt completely disable in terminal.
+By default it includes several and important configurations like commands to install Nvidia drivers and X Server Settings, AMD commands for optimizations, virtualization for the use of Virt-Manager,autoclean,autoupdate andthe annoying password prompt completely disable in terminal.
 
 Others activated options are:
 
