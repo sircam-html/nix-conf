@@ -43,10 +43,6 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  # Enable the X11 windowing system.
-  # You can disable this if you're only using the Wayland session.
-  services.xserver.enable = true;
-
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
@@ -100,6 +96,10 @@
   # Install Steam
   programs.steam.enable = true;
 
+  # Enable CoolerControl
+  programs.coolercontrol.enable = true;
+  programs.coolercontrol.nvidiaSupport = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -146,37 +146,69 @@
     }
   ];
 
-  # Enable Nvidia proprietary drivers
-  hardware.graphics.enable = true;
-  services.xserver.videoDrivers = [ "nvidia" ];
-  hardware.nvidia = {
+# Enable graphics stack
+hardware.graphics.enable = true;
+
+# Enable proprietary NVIDIA driver with modesetting
+hardware.nvidia = {
   modesetting.enable = true;
   nvidiaSettings = true;
-  open = false;  # Use proprietary driver, recommended on 25.05
+  open = false;  # Use proprietary driver, not open-source kernel module
   package = config.boot.kernelPackages.nvidiaPackages.stable;
- };
+};
 
- nixpkgs.config.nvidia.acceptLicense = true;
+# Enable X server with NVIDIA driver
+services.xserver = {
+  enable = true;
+  videoDrivers = [ "nvidia" ];
+};
 
- # Enable CoolerControl
- programs.coolercontrol.enable = true;
- programs.coolercontrol.nvidiaSupport = true;
+# Enable OpenGL and DRI support
+hardware.opengl = {
+  enable = true;
+};
 
- # Enable AMD CPU Balance performance
- hardware.cpu.amd.updateMicrocode = true;
+# Environment variables for Wayland or X11
+environment.sessionVariables = {
+  GBM_BACKEND = "nvidia-drm";
+  LIBVA_DRIVER_NAME = "nvidia";
+  XDG_SESSION_TYPE = "wayland"; # or "x11" if not using Wayland
+};
 
- services.thermald.enable = true;
+# Accept NVIDIA license
+nixpkgs.config.nvidia.acceptLicense = true;
 
- services.tlp.enable = true;
- services.tlp.settings = {
- CPU_SCALING_GOVERNOR_ON_AC = "performance";
- CPU_BOOST_ON_AC = 1;
- CPU_ENERGY_PERF_POLICY_ON_AC = "balance_performance";
- };
+ # Enable AMD CPU microcode updates for stability and performance
+  hardware.cpu.amd.updateMicrocode = true;
 
- services.power-profiles-daemon.enable = false;  # Disable to avoid conflict with TLP
+  # Enable thermald for dynamic thermal management (good for desktops)
+  services.thermald.enable = true;
 
+  # Enable TLP for advanced power management, desktop-optimized
+  services.tlp.enable = true;
 
+  # TLP settings optimized for desktop (no battery-specific tuning)
+  services.tlp.settings = {
+    CPU_SCALING_GOVERNOR_ON_AC = "schedutil";      # Balanced performance and efficiency
+    CPU_BOOST_ON_AC = 0;                            # Disable CPU boost to reduce heat
+    CPU_ENERGY_PERF_POLICY_ON_AC = "balance_power"; # Favor power saving while maintaining performance
+  };
+
+  # Disable power-profiles-daemon to avoid conflicts with TLP
+  services.power-profiles-daemon.enable = false;
+
+  # Enable powerManagement for Powertop tuning; disable CPU governor management to avoid conflicts
+  powerManagement.enable = true;
+  powerManagement.cpuFreqGovernor = null;
+  powerManagement.powertop.enable = true;
+
+  # Disable automatic suspend and hibernation on desktop to prevent unwanted sleep
+  systemd.sleep.extraConfig = ''
+    AllowSuspend=no
+    AllowHibernation=no
+    AllowHybridSleep=no
+    AllowSuspendThenHibernate=no
+  '';
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
