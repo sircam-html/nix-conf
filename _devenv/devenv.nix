@@ -9,13 +9,11 @@
 
   [
 
-  pkgs.vlc
   pkgs.git
-  pkgs.heroic
   pkgs.ferdium
+  pkgs.firefox
   pkgs.chromium
   pkgs.obs-studio
-  pkgs.virt-manager
   pkgs.youtube-music
 
   ];
