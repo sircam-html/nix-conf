@@ -90,12 +90,6 @@
   services.displayManager.autoLogin.enable = true;
   services.displayManager.autoLogin.user = "sircam";
 
-  # Install firefox.
-  programs.firefox.enable = true;
-
-  # Install Steam
-  programs.steam.enable = true;
-
   # Enable CoolerControl
   programs.coolercontrol.enable = true;
   programs.coolercontrol.nvidiaSupport = true;
@@ -111,7 +105,7 @@
       htop
       devenv
       libvirt
-      neofetch
+      fastfetch
       kdePackages.kcalc
       kdePackages.yakuake
       kdePackages.filelight
@@ -130,7 +124,7 @@
   # Enable virtualisation
   virtualisation.libvirtd.enable = true;
 
-    # List services that you want to enable:
+  # Enable Flatpak (Discover usage)
   services.flatpak.enable = true;
 
    # Disable password prompt in terminal
@@ -209,6 +203,16 @@ nixpkgs.config.nvidia.acceptLicense = true;
     AllowHybridSleep=no
     AllowSuspendThenHibernate=no
   '';
+
+    # Play Steam games locally
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (pkgs.lib.getName pkg) [ "steam" "steam-unwrapped" ];
+
+  programs.steam = {
+  enable = true;
+  remotePlay.openFirewall = true;        # For Steam Remote Play
+  dedicatedServer.openFirewall = true;   # For Source Dedicated Server hosting
+  localNetworkGameTransfers.openFirewall = true;  # For LAN transfers
+};
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
