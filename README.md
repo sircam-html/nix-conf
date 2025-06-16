@@ -2,6 +2,10 @@ NixOS Configuration Overview
 
 This repository contains a modern, desktop-oriented NixOS configuration, tailored for performance, stability, and convenience on systems with AMD CPUs and NVIDIA GPUs.
 
+💡 Philosophy
+
+This configuration exemplifies a modern, declarative NixOS desktop setup, balancing performance, usability, and maintainability. It leverages NixOS's modularity and reproducibility, making it easy to adapt or extend for future needs.
+
 
 🖥️ Hardware & Boot   
 
@@ -98,12 +102,9 @@ This repository contains a modern, desktop-oriented NixOS configuration, tailore
 
 📝 System Version
 
-    NixOS: 25.05
-    
+    NixOS: 25.05 
 
-💡 Philosophy
 
-This configuration exemplifies a modern, declarative NixOS desktop setup, balancing performance, usability, and maintainability. It leverages NixOS's modularity and reproducibility, making it easy to adapt or extend for future needs.
 
 
 ## 🔗 Resources
