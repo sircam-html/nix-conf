@@ -116,4 +116,4 @@ This configuration exemplifies a modern, declarative NixOS desktop setup, balanc
 
 Feel free to fork, adapt, and learn! 🚀
 
-Repo mirror: [Github](https://gitlab.com/S1RCAM/personal-nix-configuration)
+Repo mirror: [Gitlab](https://gitlab.com/S1RCAM/personal-nix-configuration)
