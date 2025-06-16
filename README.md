@@ -16,10 +16,9 @@ This configuration exemplifies a modern, declarative NixOS desktop setup, balanc
 
 🖱️ Desktop Environment
 
-    KDE Plasma 6 desktop environment
+    KDE Plasma 6.3.5 desktop environment
 
-    SDDM display manager with automatic login
-    
+    SDDM display manager with automatic login    
 
 🌍 Localization & Networking
 
