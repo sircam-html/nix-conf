@@ -11,8 +11,6 @@ This configuration exemplifies a modern, declarative NixOS desktop setup, balanc
 
     AMD CPU microcode updates for stability and performance
 
-    systemd-boot as the bootloader with EFI support
-
     Plymouth splash screen for a polished boot experience
     
 
