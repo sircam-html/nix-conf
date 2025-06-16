@@ -107,7 +107,7 @@ This configuration exemplifies a modern, declarative NixOS desktop setup, balanc
 - [NixOS Manual](https://nixos.org/manual/nixos/stable/)
 - [NixOS Wiki](https://nixos.wiki/)
 - [KDE Plasma](https://kde.org/plasma-desktop/)
-- [CoolerControl](https://github.com/CoolerControl/CoolerControl)
+- [CoolerControl](https://github.com/codifryed/coolercontrol)
 
 
 Feel free to fork, adapt, and learn! 🚀
