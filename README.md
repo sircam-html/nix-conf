@@ -80,6 +80,14 @@ This repository contains a modern, desktop-oriented NixOS configuration, tailore
     Environment variables set for optimal NVIDIA support (Wayland/X11)
 
     Flatpak enabled for a wider range of desktop apps
+    
+
+ 📁 Structure
+
+    configuration.nix: Main system configuration (this file)
+
+    hardware-configuration.nix: Auto-generated hardware settings
+
 
 ❄️ Cooler & Fan Control
 
@@ -93,11 +101,6 @@ This repository contains a modern, desktop-oriented NixOS configuration, tailore
 
 This configuration exemplifies a modern, declarative NixOS desktop setup, balancing performance, usability, and maintainability. It leverages NixOS's modularity and reproducibility, making it easy to adapt or extend for future needs.
 
-📁 Structure
-
-    configuration.nix: Main system configuration (this file)
-
-    hardware-configuration.nix: Auto-generated hardware settings
 
 ## 🔗 Resources
 
