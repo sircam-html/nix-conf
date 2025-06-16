@@ -6,8 +6,6 @@ This repository contains a modern, desktop-oriented NixOS configuration, tailore
 
 🖥️ Hardware & Boot
 
-    Hardware auto-detection via hardware-configuration.nix
-
     Proprietary NVIDIA drivers (with 32-bit support for gaming and multimedia)
 
     AMD CPU microcode updates for stability and performance
