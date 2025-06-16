@@ -2,7 +2,6 @@
 This NixOS configuration provides a robust, desktop-focused setup optimized for both performance and convenience, particularly on systems with AMD CPUs and NVIDIA GPUs.
 
 
-# Key Features:
 
 
 # Hardware Integration
