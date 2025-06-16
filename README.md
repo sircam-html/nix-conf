@@ -1,10 +1,10 @@
 NixOS Configuration Overview
 
 This repository contains a modern, desktop-oriented NixOS configuration, tailored for performance, stability, and convenience on systems with AMD CPUs and NVIDIA GPUs.
-
-
-
+✨ Key Features
 🖥️ Hardware & Boot
+
+    Hardware auto-detection via hardware-configuration.nix
 
     Proprietary NVIDIA drivers (with 32-bit support for gaming and multimedia)
 
@@ -26,7 +26,9 @@ This repository contains a modern, desktop-oriented NixOS configuration, tailore
 
 🌍 Localization & Networking
 
-    Locale: US English (en_US.UTF-8)   
+    Locale: US English (en_US.UTF-8)
+
+    Timezone: America/Santo_Domingo
 
     Networking: Managed by NetworkManager
 
@@ -38,7 +40,9 @@ This repository contains a modern, desktop-oriented NixOS configuration, tailore
 
     PipeWire audio stack (with PulseAudio compatibility)
 
-👤 User & Software   
+👤 User & Software
+
+    Main user: sircam (Cristian J. Hidalgo)
 
     Groups: networkmanager, wheel, qemu-libvirtd, libvirtd
 
@@ -83,18 +87,15 @@ This repository contains a modern, desktop-oriented NixOS configuration, tailore
 📝 System Version
 
     NixOS: 25.05
-    
 
+💡 Philosophy
+
+This configuration exemplifies a modern, declarative NixOS desktop setup, balancing performance, usability, and maintainability. It leverages NixOS's modularity and reproducibility, making it easy to adapt or extend for future needs.
 📁 Structure
 
     configuration.nix: Main system configuration (this file)
 
     hardware-configuration.nix: Auto-generated hardware settings
-    
-
-    💡 Philosophy
-    This configuration exemplifies a modern, declarative NixOS desktop setup, balancing performance, usability, and maintainability. It leverages NixOS's     modularity and reproducibility, making it easy to adapt or extend for future needs.
-    
 
 🔗 Resources
 
