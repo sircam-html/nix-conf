@@ -104,6 +104,6 @@ This configuration exemplifies a modern, declarative NixOS desktop setup, balanc
 - [CoolerControl](https://github.com/codifryed/coolercontrol)
 
 
-Feel free to fork, adapt, and learn! 🚀
+Adapt and learn! 🚀
 
 Repo mirror: [Gitlab](https://gitlab.com/S1RCAM/personal-nix-configuration)
