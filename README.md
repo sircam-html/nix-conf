@@ -26,9 +26,7 @@ This repository contains a modern, desktop-oriented NixOS configuration, tailore
 
 🌍 Localization & Networking
 
-    Locale: US English (en_US.UTF-8)
-
-    Timezone: America/Santo_Domingo
+    Locale: US English (en_US.UTF-8)   
 
     Networking: Managed by NetworkManager
 
@@ -40,9 +38,7 @@ This repository contains a modern, desktop-oriented NixOS configuration, tailore
 
     PipeWire audio stack (with PulseAudio compatibility)
 
-👤 User & Software
-
-    Main user: sircam (Cristian J. Hidalgo)
+👤 User & Software   
 
     Groups: networkmanager, wheel, qemu-libvirtd, libvirtd
 
