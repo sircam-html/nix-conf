@@ -1,85 +1,93 @@
-NixOS Configuration Summary
+NixOS Configuration Overview
 
-This NixOS configuration provides a robust, desktop-focused setup optimized for both performance and convenience, particularly on systems with AMD CPUs and NVIDIA GPUs.
+This repository contains a modern, desktop-oriented NixOS configuration, tailored for performance, stability, and convenience on systems with AMD CPUs and NVIDIA GPUs.
+✨ Key Features
+🖥️ Hardware & Boot
 
-Key Features:
+    Hardware auto-detection via hardware-configuration.nix
 
-    # Hardware Integration
-  Hardware-specific settings are imported from hardware-configuration.nix, which is automatically generated to match your system's devices and should not    be edited manually.
+    Proprietary NVIDIA drivers (with 32-bit support for gaming and multimedia)
 
-  Proprietary NVIDIA drivers are enabled for optimal graphics performance, with 32-bit library support for gaming and multimedia.
-  AMD CPU microcode updates are activated to ensure stability and best performance.
-   
+    AMD CPU microcode updates for stability and performance
 
-    # Boot and System
+    systemd-boot as the bootloader with EFI support
 
-   Uses systemd-boot as the bootloader with EFI support.
-   Boot splash via Plymouth for a polished startup experience.
+    Plymouth splash screen for a polished boot experience
 
-   
+🖱️ Desktop Environment
 
-    # User Environment
+    KDE Plasma 6 desktop environment
 
-        KDE Plasma 6 desktop environment with SDDM display manager and automatic login for the user "sircam" (Cristian J. Hidalgo).
+    SDDM display manager with automatic login
 
-        US keyboard layout in X11.
+    US keyboard layout in X11
 
-        Locale set to US English with timezone configured for Santo Domingo.
+    CUPS printing support
 
-        Printing support enabled via CUPS.
+🌍 Localization & Networking
 
-    # Networking
+    Locale: US English (en_US.UTF-8)
 
-        NetworkManager manages all network connections.
+    Timezone: America/Santo_Domingo
 
-        Hostname set to "nixos".
+    Networking: Managed by NetworkManager
 
-        Optional proxy configuration lines are included but commented out.
+    Hostname: nixos
 
-    # Audio
+    (Proxy configuration available, but commented out)
 
-        Modern audio stack with PipeWire (including PulseAudio compatibility), replacing legacy PulseAudio.
+🔊 Audio
 
-    # User and Software
+    PipeWire audio stack (with PulseAudio compatibility)
 
-        User "sircam" is a member of important groups (network, virtualization) and has KDE's Kate editor pre-installed.
+👤 User & Software
 
-        System packages include essential tools (htop, libvirt, fastfetch) and KDE utilities (KCalc, Yakuake, Filelight, KolourPaint).
+    Main user: sircam (Cristian J. Hidalgo)
 
-    # Virtualization and Gaming
+    Groups: networkmanager, wheel, qemu-libvirtd, libvirtd
 
-        Virtualization enabled via libvirtd and QEMU support.
+    Pre-installed KDE apps: Kate, KCalc, Yakuake, Filelight, KolourPaint
 
-        Steam enabled with open firewall for Remote Play and LAN transfers, and unfree packages allowed for gaming.
+    Essential tools: htop, devenv, libvirt, fastfetch
 
-    # Power and Thermal Management
+🕹️ Virtualization & Gaming
 
-        TLP and Thermald are enabled for advanced power and thermal management, with settings optimized for desktop usage.
+    Virtualization: Enabled via libvirtd and QEMU
 
-        Power-profiles-daemon is disabled to avoid conflicts.
+    Steam: Enabled with open firewall for Remote Play, LAN transfers, and Source Dedicated Server hosting
 
-        Automatic suspend and hibernation are disabled to prevent unwanted sleep on desktop systems.
+    Unfree packages: Allowed for gaming
 
-    # System Maintenance
+🌡️ Power & Thermal Management
 
-        Automatic garbage collection (GC) and store optimization are scheduled daily to keep the system clean.
+    TLP and Thermald for advanced power and thermal management (desktop-optimized)
 
-        Nix Flakes and the new nix command are enabled for advanced package and configuration management.
+    Power-profiles-daemon: Disabled to avoid conflicts
 
-    # Security and Convenience
+    Suspend/Hibernate: Disabled on desktop systems
 
-        Sudo is configured for passwordless access in the terminal for the main user.
+🛠️ System Maintenance
 
-        Environment variables are set for optimal NVIDIA support in both Wayland and X11 sessions.
+    Automatic garbage collection and store optimization (daily)
 
-        Flatpak is enabled for access to a wide range of desktop applications.
+    Nix Flakes and new nix command enabled
 
-    # Cooler and Fan Control
+🔐 Security & Convenience
 
-        CoolerControl with NVIDIA support is enabled for advanced fan management.
+    Passwordless sudo in terminal for main user
 
-System Version:
+    Environment variables set for optimal NVIDIA support (Wayland/X11)
 
-    Configured for NixOS 25.05.
+    Flatpak enabled for a wider range of desktop apps
 
-This configuration exemplifies a modern, declarative NixOS desktop setup, balancing performance, usability, and maintainability. It leverages NixOS's modularity and reproducibility, making it easy to adapt or extend for future needs
+❄️ Cooler & Fan Control
+
+    CoolerControl with NVIDIA support for advanced fan management
+
+📝 System Version
+
+    NixOS: 25.05
+
+💡 Philosophy
+
+This configuration exemplifies a modern, declarative NixOS desktop setup, balancing performance, usability, and maintainability. It leverages NixOS's modularity and reproducibility, making it easy to adapt or extend for future needs.
