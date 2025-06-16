@@ -3,9 +3,7 @@ NixOS Configuration Overview
 This repository contains a modern, desktop-oriented NixOS configuration, tailored for performance, stability, and convenience on systems with AMD CPUs and NVIDIA GPUs.
 
 
-🖥️ Hardware & Boot
-
-    Hardware auto-detection via hardware-configuration.nix
+🖥️ Hardware & Boot   
 
     Proprietary NVIDIA drivers (with 32-bit support for gaming and multimedia)
 
@@ -14,6 +12,7 @@ This repository contains a modern, desktop-oriented NixOS configuration, tailore
     systemd-boot as the bootloader with EFI support
 
     Plymouth splash screen for a polished boot experience
+    
 
 🖱️ Desktop Environment
 
@@ -24,32 +23,31 @@ This repository contains a modern, desktop-oriented NixOS configuration, tailore
     US keyboard layout in X11
 
     CUPS printing support
+    
 
 🌍 Localization & Networking
 
-    Locale: US English (en_US.UTF-8)
-
-    Timezone: America/Santo_Domingo
+    Locale: US English (en_US.UTF-8)    
 
     Networking: Managed by NetworkManager
 
     Hostname: nixos
 
     (Proxy configuration available, but commented out)
+    
 
 🔊 Audio
 
     PipeWire audio stack (with PulseAudio compatibility)
 
-👤 User & Software
-
-    Main user: sircam (Cristian J. Hidalgo)
+👤 User & Software   
 
     Groups: networkmanager, wheel, qemu-libvirtd, libvirtd
 
     Pre-installed KDE apps: Kate, KCalc, Yakuake, Filelight, KolourPaint
 
     Essential tools: htop, devenv, libvirt, fastfetch
+    
 
 🕹️ Virtualization & Gaming
 
@@ -58,6 +56,7 @@ This repository contains a modern, desktop-oriented NixOS configuration, tailore
     Steam: Enabled with open firewall for Remote Play, LAN transfers, and Source Dedicated Server hosting
 
     Unfree packages: Allowed for gaming
+    
 
 🌡️ Power & Thermal Management
 
@@ -66,12 +65,14 @@ This repository contains a modern, desktop-oriented NixOS configuration, tailore
     Power-profiles-daemon: Disabled to avoid conflicts
 
     Suspend/Hibernate: Disabled on desktop systems
+    
 
 🛠️ System Maintenance
 
     Automatic garbage collection and store optimization (daily)
 
     Nix Flakes and new nix command enabled
+    
 
 🔐 Security & Convenience
 
@@ -80,6 +81,7 @@ This repository contains a modern, desktop-oriented NixOS configuration, tailore
     Environment variables set for optimal NVIDIA support (Wayland/X11)
 
     Flatpak enabled for a wider range of desktop apps
+    
     
 
  📁 Structure
@@ -92,10 +94,12 @@ This repository contains a modern, desktop-oriented NixOS configuration, tailore
 ❄️ Cooler & Fan Control
 
     CoolerControl with NVIDIA support for advanced fan management
+    
 
 📝 System Version
 
     NixOS: 25.05
+    
 
 💡 Philosophy
 
