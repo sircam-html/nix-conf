@@ -5,20 +5,18 @@ This NixOS configuration provides a robust, desktop-focused setup optimized for 
 Key Features:
 
     # Hardware Integration
+  Hardware-specific settings are imported from hardware-configuration.nix, which is automatically generated to match your system's devices and should not    be edited manually.
 
-        Hardware-specific settings are imported from hardware-configuration.nix, which is automatically generated to match your system's devices and should not be edited manually
-
-        .
-
-        Proprietary NVIDIA drivers are enabled for optimal graphics performance, with 32-bit library support for gaming and multimedia.
-
-        AMD CPU microcode updates are activated to ensure stability and best performance.
+  Proprietary NVIDIA drivers are enabled for optimal graphics performance, with 32-bit library support for gaming and multimedia.
+  AMD CPU microcode updates are activated to ensure stability and best performance.
+   
 
     # Boot and System
 
-        Uses systemd-boot as the bootloader with EFI support.
+   Uses systemd-boot as the bootloader with EFI support.
+   Boot splash via Plymouth for a polished startup experience.
 
-        Boot splash via Plymouth for a polished startup experience.
+   
 
     # User Environment
 
