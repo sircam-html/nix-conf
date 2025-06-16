@@ -4,6 +4,7 @@ This NixOS configuration provides a robust, desktop-focused setup optimized for 
 
 
 
+
 # Hardware Integration
 • Environment variables are set for optimal NVIDIA support in both Wayland and X11 sessions.
 • Hardware-specific settings are imported from hardware-configuration.nix, which is automatically generated to match your system's devices and should not be edited manually.  
