@@ -2,7 +2,7 @@ NixOS Configuration Overview
 
 This repository contains a modern, desktop-oriented NixOS configuration, tailored for performance, stability, and convenience on systems with AMD CPUs and NVIDIA GPUs.
 
-#🖥️ Hardware & Boot
+🖥️ Hardware & Boot
 
     Hardware auto-detection via hardware-configuration.nix
 
