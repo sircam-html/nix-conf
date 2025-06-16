@@ -19,10 +19,6 @@ This configuration exemplifies a modern, declarative NixOS desktop setup, balanc
     KDE Plasma 6 desktop environment
 
     SDDM display manager with automatic login
-
-    US keyboard layout in X11
-
-    CUPS printing support
     
 
 🌍 Localization & Networking
@@ -32,8 +28,6 @@ This configuration exemplifies a modern, declarative NixOS desktop setup, balanc
     Networking: Managed by NetworkManager
 
     Hostname: nixos
-
-    (Proxy configuration available, but commented out)
     
 
 🔊 Audio
