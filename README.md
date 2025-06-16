@@ -92,6 +92,7 @@ This repository contains a modern, desktop-oriented NixOS configuration, tailore
 💡 Philosophy
 
 This configuration exemplifies a modern, declarative NixOS desktop setup, balancing performance, usability, and maintainability. It leverages NixOS's modularity and reproducibility, making it easy to adapt or extend for future needs.
+
 📁 Structure
 
     configuration.nix: Main system configuration (this file)
@@ -100,7 +101,7 @@ This configuration exemplifies a modern, declarative NixOS desktop setup, balanc
 
 🔗 Resources
 
-    NixOS Manual
+    [NixOS Manual]([URL](https://github.com/CoolerControl/CoolerControl))
 
     NixOS Wiki
 
@@ -109,5 +110,3 @@ This configuration exemplifies a modern, declarative NixOS desktop setup, balanc
     CoolerControl
 
     Feel free to fork, adapt, and learn! 🚀
-
-You can copy and paste this into your README.md. Adjust links or sections as needed for your repo!
