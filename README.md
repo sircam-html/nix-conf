@@ -101,7 +101,7 @@ This configuration exemplifies a modern, declarative NixOS desktop setup, balanc
 
 🔗 Resources
 
-    [NixOS Manual]([URL](https://github.com/CoolerControl/CoolerControl))
+    [NixOS Manual] (https://github.com/CoolerControl/CoolerControl)
 
     NixOS Wiki
 
