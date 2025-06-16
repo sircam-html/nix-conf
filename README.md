@@ -15,7 +15,7 @@ This NixOS configuration provides a robust, desktop-focused setup optimized for 
  • CoolerControl with NVIDIA support is enabled for advanced fan management.  
 
 # Boot and System
-• Uses systemd-boot as the bootloader with EFI support. 
+• Uses systemd-boot as the bootloader with EFI support.
 • Boot splash via Plymouth for a polished startup experience.  
 
 # Virtualization and Gaming      
