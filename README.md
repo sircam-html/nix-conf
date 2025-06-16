@@ -83,7 +83,29 @@ This repository contains a modern, desktop-oriented NixOS configuration, tailore
 📝 System Version
 
     NixOS: 25.05
+    
 
-💡 Philosophy
+📁 Structure
 
-This configuration exemplifies a modern, declarative NixOS desktop setup, balancing performance, usability, and maintainability. It leverages NixOS's modularity and reproducibility, making it easy to adapt or extend for future needs.
+    configuration.nix: Main system configuration (this file)
+
+    hardware-configuration.nix: Auto-generated hardware settings
+    
+
+    💡 Philosophy
+    This configuration exemplifies a modern, declarative NixOS desktop setup, balancing performance, usability, and maintainability. It leverages NixOS's     modularity and reproducibility, making it easy to adapt or extend for future needs.
+    
+
+🔗 Resources
+
+    NixOS Manual
+
+    NixOS Wiki
+
+    KDE Plasma
+
+    CoolerControl
+
+    Feel free to fork, adapt, and learn! 🚀
+
+You can copy and paste this into your README.md. Adjust links or sections as needed for your repo!
