@@ -99,14 +99,12 @@ This configuration exemplifies a modern, declarative NixOS desktop setup, balanc
 
     hardware-configuration.nix: Auto-generated hardware settings
 
-🔗 Resources
+## 🔗 Resources
 
-    [NixOS Manual] (https://github.com/CoolerControl/CoolerControl)
+- [NixOS Manual](https://nixos.org/manual/nixos/stable/)
+- [NixOS Wiki](https://nixos.wiki/)
+- [KDE Plasma](https://kde.org/plasma-desktop/)
+- [CoolerControl](https://github.com/CoolerControl/CoolerControl)
 
-    NixOS Wiki
-
-    KDE Plasma
-
-    CoolerControl
 
     Feel free to fork, adapt, and learn! 🚀
