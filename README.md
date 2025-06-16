@@ -4,7 +4,7 @@ This NixOS configuration provides a robust, desktop-focused setup optimized for 
 
 Key Features:
 
-    Hardware Integration
+    # Hardware Integration
 
         Hardware-specific settings are imported from hardware-configuration.nix, which is automatically generated to match your system's devices and should not be edited manually
 
@@ -14,13 +14,13 @@ Key Features:
 
         AMD CPU microcode updates are activated to ensure stability and best performance.
 
-    Boot and System
+    # Boot and System
 
         Uses systemd-boot as the bootloader with EFI support.
 
         Boot splash via Plymouth for a polished startup experience.
 
-    User Environment
+    # User Environment
 
         KDE Plasma 6 desktop environment with SDDM display manager and automatic login for the user "sircam" (Cristian J. Hidalgo).
 
@@ -30,7 +30,7 @@ Key Features:
 
         Printing support enabled via CUPS.
 
-    Networking
+    # Networking
 
         NetworkManager manages all network connections.
 
@@ -38,23 +38,23 @@ Key Features:
 
         Optional proxy configuration lines are included but commented out.
 
-    Audio
+    # Audio
 
         Modern audio stack with PipeWire (including PulseAudio compatibility), replacing legacy PulseAudio.
 
-    User and Software
+    # User and Software
 
         User "sircam" is a member of important groups (network, virtualization) and has KDE's Kate editor pre-installed.
 
         System packages include essential tools (htop, libvirt, fastfetch) and KDE utilities (KCalc, Yakuake, Filelight, KolourPaint).
 
-    Virtualization and Gaming
+    # Virtualization and Gaming
 
         Virtualization enabled via libvirtd and QEMU support.
 
         Steam enabled with open firewall for Remote Play and LAN transfers, and unfree packages allowed for gaming.
 
-    Power and Thermal Management
+    # Power and Thermal Management
 
         TLP and Thermald are enabled for advanced power and thermal management, with settings optimized for desktop usage.
 
@@ -62,13 +62,13 @@ Key Features:
 
         Automatic suspend and hibernation are disabled to prevent unwanted sleep on desktop systems.
 
-    System Maintenance
+    # System Maintenance
 
         Automatic garbage collection (GC) and store optimization are scheduled daily to keep the system clean.
 
         Nix Flakes and the new nix command are enabled for advanced package and configuration management.
 
-    Security and Convenience
+    # Security and Convenience
 
         Sudo is configured for passwordless access in the terminal for the main user.
 
@@ -76,7 +76,7 @@ Key Features:
 
         Flatpak is enabled for access to a wide range of desktop applications.
 
-    Cooler and Fan Control
+    # Cooler and Fan Control
 
         CoolerControl with NVIDIA support is enabled for advanced fan management.
 
