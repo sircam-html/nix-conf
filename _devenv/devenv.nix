@@ -8,14 +8,12 @@
   packages =
 
   [
-
-  pkgs.git
-  pkgs.ferdium
-  pkgs.firefox
-  pkgs.chromium
-  pkgs.obs-studio
-  pkgs.youtube-music
-
+    pkgs.git
+    pkgs.ferdium
+    pkgs.firefox
+    pkgs.chromium
+    pkgs.obs-studio
+    pkgs.youtube-music
   ];
 
   # https://devenv.sh/languages/
@@ -49,8 +47,8 @@
     git --version | grep --color=auto "${pkgs.git.version}"
   '';
 
-  # https://devenv.sh/pre-commit-hooks/
-  # pre-commit.hooks.shellcheck.enable = true;
+  # https://devenv.sh/git-hooks/
+  # git-hooks.hooks.shellcheck.enable = true;
 
   # See full reference at https://devenv.sh/reference/options/
 }
