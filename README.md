@@ -94,8 +94,7 @@
 
     NixOS: 25.05 
 
-
-
+##
 
 ## 🔗 Resources
 
