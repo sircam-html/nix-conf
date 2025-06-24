@@ -4,6 +4,7 @@
 
 - This configuration exemplifies a modern, declarative NixOS desktop setup, balancing performance, usability, and maintainability. It leverages NixOS's modularity and reproducibility, making it easy to adapt or extend for future needs.
 
+## 
 
 ## 🖥️ Hardware & Boot   
 
