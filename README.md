@@ -14,13 +14,13 @@
     Plymouth splash screen for a polished boot experience
     
 
-🖱️ Desktop Environment
+## 🖱️ Desktop Environment
 
     KDE Plasma 6.3.5 desktop environment
 
     SDDM display manager with automatic login    
 
-🌍 Localization & Networking
+## 🌍 Localization & Networking
 
     Locale: US English (en_US.UTF-8)    
 
@@ -29,11 +29,11 @@
     Hostname: nixos
     
 
-🔊 Audio
+## 🔊 Audio
 
     PipeWire audio stack (with PulseAudio compatibility)
 
-👤 User & Software   
+## 👤 User & Software   
 
     Groups: networkmanager, wheel, qemu-libvirtd, libvirtd
 
@@ -42,7 +42,7 @@
     Essential tools: htop, devenv, libvirt, fastfetch
     
 
-🕹️ Virtualization & Gaming
+## 🕹️ Virtualization & Gaming
 
     Virtualization: Enabled via libvirtd and QEMU
 
@@ -51,7 +51,7 @@
     Unfree packages: Allowed for gaming
     
 
-🌡️ Power & Thermal Management
+## 🌡️ Power & Thermal Management
 
     TLP and Thermald for advanced power and thermal management (desktop-optimized)
 
@@ -60,14 +60,14 @@
     Suspend/Hibernate: Disabled on desktop systems
     
 
-🛠️ System Maintenance
+## 🛠️ System Maintenance
 
     Automatic garbage collection and store optimization (daily)
 
     Nix Flakes and new nix command enabled
     
 
-🔐 Security & Convenience
+## 🔐 Security & Convenience
 
     Passwordless sudo in terminal for main user
 
@@ -77,19 +77,19 @@
     
     
 
- 📁 Structure
+ ## 📁 Structure
 
     configuration.nix: Main system configuration (this file)
 
     hardware-configuration.nix: Auto-generated hardware settings
 
 
-❄️ Cooler & Fan Control
+## ❄️ Cooler & Fan Control
 
     CoolerControl with NVIDIA support for advanced fan management
     
 
-📝 System Version
+## 📝 System Version
 
     NixOS: 25.05 
 
