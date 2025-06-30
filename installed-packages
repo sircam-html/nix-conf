@@ -1,0 +1,41 @@
+Name:               chromium
+Flake attribute:    legacyPackages.x86_64-linux.chromium
+Original flake URL: flake:nixpkgs
+Locked flake URL:   github:NixOS/nixpkgs/a48741b083d4f36dd79abd9f760c84da6b4dc0e5?narHash=sha256-BKk4yDiXr4LdF80OTVqYJ53Q74rOcA/82EClXug8xsY%3D
+Store paths:        /nix/store/767iim72fxc13jciws3n55dd6pqv010w-chromium-138.0.7204.49
+
+Name:               devbox
+Flake attribute:    legacyPackages.x86_64-linux.devbox
+Original flake URL: flake:nixpkgs
+Locked flake URL:   github:NixOS/nixpkgs/a48741b083d4f36dd79abd9f760c84da6b4dc0e5?narHash=sha256-BKk4yDiXr4LdF80OTVqYJ53Q74rOcA/82EClXug8xsY%3D
+Store paths:        /nix/store/513wnvkzb4wxr97ms7y01vd4pxh331b6-devbox-0.14.2
+
+Name:               ferdium
+Flake attribute:    legacyPackages.x86_64-linux.ferdium
+Original flake URL: flake:nixpkgs
+Locked flake URL:   github:NixOS/nixpkgs/a48741b083d4f36dd79abd9f760c84da6b4dc0e5?narHash=sha256-BKk4yDiXr4LdF80OTVqYJ53Q74rOcA/82EClXug8xsY%3D
+Store paths:        /nix/store/7w2vmsdmf775g9islfs6db6qclbnbj0c-ferdium-7.0.1
+
+Name:               firefox
+Flake attribute:    legacyPackages.x86_64-linux.firefox
+Original flake URL: flake:nixpkgs
+Locked flake URL:   github:NixOS/nixpkgs/a48741b083d4f36dd79abd9f760c84da6b4dc0e5?narHash=sha256-BKk4yDiXr4LdF80OTVqYJ53Q74rOcA/82EClXug8xsY%3D
+Store paths:        /nix/store/ka42d19hkxdi86adxw1afzvgbbi8sxy0-firefox-140.0.1
+
+Name:               obs-studio
+Flake attribute:    legacyPackages.x86_64-linux.obs-studio
+Original flake URL: flake:nixpkgs
+Locked flake URL:   github:NixOS/nixpkgs/a48741b083d4f36dd79abd9f760c84da6b4dc0e5?narHash=sha256-BKk4yDiXr4LdF80OTVqYJ53Q74rOcA/82EClXug8xsY%3D
+Store paths:        /nix/store/dxnaj1bsibi0j09jhh64d8s3i7qdrcaa-obs-studio-31.0.3
+
+Name:               vlc
+Flake attribute:    legacyPackages.x86_64-linux.vlc
+Original flake URL: flake:nixpkgs
+Locked flake URL:   github:NixOS/nixpkgs/a48741b083d4f36dd79abd9f760c84da6b4dc0e5?narHash=sha256-BKk4yDiXr4LdF80OTVqYJ53Q74rOcA/82EClXug8xsY%3D
+Store paths:        /nix/store/whm2vspks9kd529yw2pmwrgyswda2vyf-vlc-3.0.21
+
+Name:               youtube-music
+Flake attribute:    legacyPackages.x86_64-linux.youtube-music
+Original flake URL: flake:nixpkgs
+Locked flake URL:   github:NixOS/nixpkgs/a48741b083d4f36dd79abd9f760c84da6b4dc0e5?narHash=sha256-BKk4yDiXr4LdF80OTVqYJ53Q74rOcA/82EClXug8xsY%3D
+Store paths:        /nix/store/hv1vdpyg0av0lfgyi71j39cax6k2wlzb-youtube-music-3.9.0
