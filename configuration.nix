@@ -86,7 +86,6 @@
   # List packages installed in system profile.
   environment.systemPackages = with pkgs; [
       htop
-      devenv
       libvirt
       fastfetch
       kdePackages.kcalc
