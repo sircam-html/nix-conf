@@ -40,7 +40,7 @@
 
     Pre-installed KDE apps: Kate, KCalc, Yakuake, Filelight, KolourPaint
 
-    Essential tools: htop, devenv, libvirt, fastfetch
+    Essential tools: htop, , libvirt, fastfetch
     
 
 ## 🕹️ Virtualization & Gaming
