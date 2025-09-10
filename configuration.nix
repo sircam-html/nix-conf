@@ -100,6 +100,9 @@
   nix.gc.options = "--delete-older-than 10d";
   nix.settings.auto-optimise-store = true;
 
+  # clean tmp folder automatically on boot
+  boot.tmp.cleanOnBoot = true;
+
   # Enable the Flakes feature and the accompanying new nix command-line tool
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
