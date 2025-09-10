@@ -1,65 +1,65 @@
 Name:               chromium
 Flake attribute:    legacyPackages.x86_64-linux.chromium
 Original flake URL: flake:nixpkgs
-Locked flake URL:   github:NixOS/nixpkgs/8131c0ea9df6293a247be743a387ff725e464db7?narHash=sha256-pGvcN/yiJ4e3/hgvTwkyZvl6c3HuLLCY/hjEzDuQB54%3D
-Store paths:        /nix/store/d44pxga932clhgca81wj14y6k9hzqf4x-chromium-138.0.7204.157
+Locked flake URL:   github:NixOS/nixpkgs/ca77296380960cd497a765102eeb1356eb80fed0?narHash=sha256-PgLSZDBEWUHpfTRfFyklmiiLBE1i1aGCtz4eRA3POao%3D
+Store paths:        /nix/store/8gar7zv6fjlvwn1w3rcwd4f9xnggkjp8-chromium-140.0.7339.80
 
 Name:               devbox
 Flake attribute:    legacyPackages.x86_64-linux.devbox
 Original flake URL: flake:nixpkgs
-Locked flake URL:   github:NixOS/nixpkgs/2a2130494ad647f953593c4e84ea4df839fbd68c?narHash=sha256-Q82Ms%2BFQmgOBkdoSVm%2BFBpuFoeUAffNerR5yVV7SgT8%3D
-Store paths:        /nix/store/513wnvkzb4wxr97ms7y01vd4pxh331b6-devbox-0.14.2
+Locked flake URL:   github:NixOS/nixpkgs/ca77296380960cd497a765102eeb1356eb80fed0?narHash=sha256-PgLSZDBEWUHpfTRfFyklmiiLBE1i1aGCtz4eRA3POao%3D
+Store paths:        /nix/store/cgm4fl73qp09y9qxb1914j4ixzq8v29y-devbox-0.16.0
 
 Name:               ferdium
 Flake attribute:    legacyPackages.x86_64-linux.ferdium
 Original flake URL: flake:nixpkgs
-Locked flake URL:   github:NixOS/nixpkgs/2a2130494ad647f953593c4e84ea4df839fbd68c?narHash=sha256-Q82Ms%2BFQmgOBkdoSVm%2BFBpuFoeUAffNerR5yVV7SgT8%3D
-Store paths:        /nix/store/1awdzs8x8sz5ngd5b3pxmbvjvf60vgrn-ferdium-7.0.1
+Locked flake URL:   github:NixOS/nixpkgs/ca77296380960cd497a765102eeb1356eb80fed0?narHash=sha256-PgLSZDBEWUHpfTRfFyklmiiLBE1i1aGCtz4eRA3POao%3D
+Store paths:        /nix/store/7hlsgaz6d7n2rfppaz32hjk4y98p0prr-ferdium-7.1.0
 
 Name:               firefox
 Flake attribute:    legacyPackages.x86_64-linux.firefox
 Original flake URL: flake:nixpkgs
-Locked flake URL:   github:NixOS/nixpkgs/2a2130494ad647f953593c4e84ea4df839fbd68c?narHash=sha256-Q82Ms%2BFQmgOBkdoSVm%2BFBpuFoeUAffNerR5yVV7SgT8%3D
-Store paths:        /nix/store/qr8gsy0zqszxpk3mrpvigkjr8w7lnizk-firefox-140.0.4
+Locked flake URL:   github:NixOS/nixpkgs/ca77296380960cd497a765102eeb1356eb80fed0?narHash=sha256-PgLSZDBEWUHpfTRfFyklmiiLBE1i1aGCtz4eRA3POao%3D
+Store paths:        /nix/store/84cpnfg8198wdi0smxz66bvw89vp1wwk-firefox-142.0.1
 
 Name:               heroic
 Flake attribute:    legacyPackages.x86_64-linux.heroic
 Original flake URL: flake:nixpkgs
-Locked flake URL:   github:NixOS/nixpkgs/be9e214982e20b8310878ac2baa063a961c1bdf6?narHash=sha256-HM791ZQtXV93xtCY%2BZxG1REzhQenSQO020cu6rHtAPk%3D
-Store paths:        /nix/store/bllpdg5l08kxcz1nh7gfg4y4l1h0sh1l-heroic-2.17.2
+Locked flake URL:   github:NixOS/nixpkgs/ca77296380960cd497a765102eeb1356eb80fed0?narHash=sha256-PgLSZDBEWUHpfTRfFyklmiiLBE1i1aGCtz4eRA3POao%3D
+Store paths:        /nix/store/27qpzjmn5824x1pjk4m05in0mgz60lhv-heroic-2.18.1
 
 Name:               obs-studio
 Flake attribute:    legacyPackages.x86_64-linux.obs-studio
 Original flake URL: flake:nixpkgs
-Locked flake URL:   github:NixOS/nixpkgs/2a2130494ad647f953593c4e84ea4df839fbd68c?narHash=sha256-Q82Ms%2BFQmgOBkdoSVm%2BFBpuFoeUAffNerR5yVV7SgT8%3D
-Store paths:        /nix/store/2a67bvf529w1k0yx138kwg2sy6nab7r4-obs-studio-31.0.4
-
-Name:               q4wine
-Flake attribute:    legacyPackages.x86_64-linux.q4wine
-Original flake URL: flake:nixpkgs
-Locked flake URL:   github:NixOS/nixpkgs/be9e214982e20b8310878ac2baa063a961c1bdf6?narHash=sha256-HM791ZQtXV93xtCY%2BZxG1REzhQenSQO020cu6rHtAPk%3D
-Store paths:        /nix/store/78s7p56nsjcb85k907s4jvd1nbk9hn27-q4wine-1.3.13
+Locked flake URL:   github:NixOS/nixpkgs/ca77296380960cd497a765102eeb1356eb80fed0?narHash=sha256-PgLSZDBEWUHpfTRfFyklmiiLBE1i1aGCtz4eRA3POao%3D
+Store paths:        /nix/store/xzzbqz18z6k9cxlf53c7yal8ymzg0bhw-obs-studio-31.1.2
 
 Name:               vlc
 Flake attribute:    legacyPackages.x86_64-linux.vlc
 Original flake URL: flake:nixpkgs
-Locked flake URL:   github:NixOS/nixpkgs/2a2130494ad647f953593c4e84ea4df839fbd68c?narHash=sha256-Q82Ms%2BFQmgOBkdoSVm%2BFBpuFoeUAffNerR5yVV7SgT8%3D
-Store paths:        /nix/store/x85wy0npd3h5ypqr1hnc7x5paxklrhgw-vlc-3.0.21
+Locked flake URL:   github:NixOS/nixpkgs/ca77296380960cd497a765102eeb1356eb80fed0?narHash=sha256-PgLSZDBEWUHpfTRfFyklmiiLBE1i1aGCtz4eRA3POao%3D
+Store paths:        /nix/store/51kp0vfqzqwhmpyzk9cjdn2if3x0y0q6-vlc-3.0.21
 
 Name:               wine
 Flake attribute:    legacyPackages.x86_64-linux.wine
 Original flake URL: flake:nixpkgs
-Locked flake URL:   github:NixOS/nixpkgs/a421ac6595024edcfbb1ef950a3712b89161c359?narHash=sha256-Nz2vtUEaRB/UjvPfuhHpez060P/4mvGpXW4JCDIboA4%3D
-Store paths:        /nix/store/7aglqv3jv7ch8kwvwsbim8f898dilfxl-wine-10.0
+Locked flake URL:   github:NixOS/nixpkgs/ca77296380960cd497a765102eeb1356eb80fed0?narHash=sha256-PgLSZDBEWUHpfTRfFyklmiiLBE1i1aGCtz4eRA3POao%3D
+Store paths:        /nix/store/86yr6bm9gj73gdpa6h929419s6lnnph2-wine-10.0
 
 Name:               winetricks
 Flake attribute:    legacyPackages.x86_64-linux.winetricks
 Original flake URL: flake:nixpkgs
-Locked flake URL:   github:NixOS/nixpkgs/be9e214982e20b8310878ac2baa063a961c1bdf6?narHash=sha256-HM791ZQtXV93xtCY%2BZxG1REzhQenSQO020cu6rHtAPk%3D
-Store paths:        /nix/store/bymn0sqdxs0d7qh9ax523vbbc6xmwk7h-winetricks-20250102
+Locked flake URL:   github:NixOS/nixpkgs/ca77296380960cd497a765102eeb1356eb80fed0?narHash=sha256-PgLSZDBEWUHpfTRfFyklmiiLBE1i1aGCtz4eRA3POao%3D
+Store paths:        /nix/store/s3ryyaqsl706fc1jxyp9xljhh7kv3n9v-winetricks-20250102
 
 Name:               youtube-music
 Flake attribute:    legacyPackages.x86_64-linux.youtube-music
 Original flake URL: flake:nixpkgs
-Locked flake URL:   github:NixOS/nixpkgs/2a2130494ad647f953593c4e84ea4df839fbd68c?narHash=sha256-Q82Ms%2BFQmgOBkdoSVm%2BFBpuFoeUAffNerR5yVV7SgT8%3D
-Store paths:        /nix/store/hv1vdpyg0av0lfgyi71j39cax6k2wlzb-youtube-music-3.9.0
+Locked flake URL:   github:NixOS/nixpkgs/ca77296380960cd497a765102eeb1356eb80fed0?narHash=sha256-PgLSZDBEWUHpfTRfFyklmiiLBE1i1aGCtz4eRA3POao%3D
+Store paths:        /nix/store/mpj5mp555wm5mrzw2i797j5vwg4dxfim-youtube-music-3.10.0
+
+Name:               ytdownloader
+Flake attribute:    legacyPackages.x86_64-linux.ytdownloader
+Original flake URL: flake:nixpkgs
+Locked flake URL:   github:NixOS/nixpkgs/ca77296380960cd497a765102eeb1356eb80fed0?narHash=sha256-PgLSZDBEWUHpfTRfFyklmiiLBE1i1aGCtz4eRA3POao%3D
+Store paths:        /nix/store/sqg850q0z37zhydf4kjq9zzvy03i1myf-ytDownloader-3.19.1
