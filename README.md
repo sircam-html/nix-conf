@@ -1,8 +1,8 @@
 ## NixOS Configuration Overview
 
-💡 Philosophy
+💡 About this set up
 
-- This configuration exemplifies a modern, declarative NixOS desktop setup, balancing performance, usability, and maintainability. It leverages NixOS's modularity and reproducibility, making it easy to adapt or extend for future needs.
+- Personal configuration of my NixOS set up feauturing a desktop system with KDE Plasma 6, SDDM login manager with automatic login for user. It work with proprietary NVIDIA driver and full hardware acceleration for 32-bit support for gaming. The system is optimized for a desktop with TLP and thermald for power and thermal control, while disabling sleep functions. Steam and Flatpak are enabled, and unfree packages are allowed. Nix garbage collection runs daily, and the Flakes feature is activated for modern package management.
 
 ## 
 
